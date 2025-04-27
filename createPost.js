@@ -43,6 +43,15 @@ document.getElementById("createPostForm").addEventListener("submit", function(ev
         // Update the logged-in user data in localStorage
         localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
+        // update users list
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        const userIndex = users.findIndex(user => user.username === loggedInUser.username);
+
+        if (userIndex !== -1) {
+            users[userIndex].posts = loggedInUser.posts;
+            localStorage.setItem("users", JSON.stringify(users));
+        }
+
         // Redirect to profile page to view new post
         alert("Post created successfully.");
         window.location.href = "profile.html";
