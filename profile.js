@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 postDiv.classList.add("post");
 
                 const postTitle = document.createElement("h4");
-                postTitle.innerText = post.title;
+                postTitle.innerHTML = post.title;
 
                 const postContent = document.createElement("p");
-                postContent.innerText = post.content;
+                postContent.innerHTML = post.content;
 
                 postDiv.appendChild(postTitle);
                 postDiv.appendChild(postContent);
