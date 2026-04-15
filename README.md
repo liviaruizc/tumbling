@@ -1,5 +1,8 @@
 # 📝 Tumbling
 
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/liviaruizc/tumbling/badge)](https://securityscorecards.dev/viewer/?uri=github.com/liviaruizc/tumbling)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/PROJECT_ID/badge)](https://www.bestpractices.dev/projects/PROJECT_ID)
+
 **Tumbling** is a simple blog-style web application that allows users to register, log in, create and view personal posts, and manage their profiles — including uploading profile pictures and updating bios.
 
 ## 🌐 Live Demo
